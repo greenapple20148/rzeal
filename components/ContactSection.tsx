@@ -60,10 +60,10 @@ const ContactSection: React.FC = () => {
               <div className="absolute top-0 right-0 p-6 opacity-10">
                 <i className="fa-solid fa-map-pin text-6xl"></i>
               </div>
-              <h4 className="text-xl font-bold mb-4 relative z-10">Global HQ</h4>
+              <h4 className="text-xl font-bold mb-4 relative z-10">HQ</h4>
               <p className="text-slate-400 mb-6 relative z-10">
-                101 Mission Street, Suite 500<br />
-                San Francisco, CA 94105
+                43154 Cleland Dr<br />
+                Ashburn, VA 20148
               </p>
               <div className="flex items-center gap-3 text-indigo-400 font-semibold relative z-10">
                 <i className="fa-solid fa-clock"></i>
