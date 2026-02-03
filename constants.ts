@@ -131,11 +131,7 @@ export const MILESTONES = [
 ];
 
 export const LOCATIONS = [
-<<<<<<< HEAD
   { city: "Ashburn", region: "Americas", role: "Global HQ" },
-=======
-  { city: "San Francisco", region: "Americas", role: "Global HQ" },
->>>>>>> 7940f96 (initial commit)
   { city: "New York", region: "Americas", role: "Finance Hub" },
   { city: "London", region: "EMEA", role: "European HQ" },
   { city: "Singapore", region: "APAC", role: "APAC Hub" }
