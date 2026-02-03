@@ -60,14 +60,14 @@ const ContactSection: React.FC = () => {
               <div className="absolute top-0 right-0 p-6 opacity-10">
                 <i className="fa-solid fa-map-pin text-6xl"></i>
               </div>
-              <h4 className="text-xl font-bold mb-4 relative z-10">HQ</h4>
+              <h4 className="text-xl font-bold mb-4 relative z-10">Global HQ</h4>
               <p className="text-slate-400 mb-6 relative z-10">
                 43154 Cleland Dr<br />
                 Ashburn, VA 20148
               </p>
               <div className="flex items-center gap-3 text-indigo-400 font-semibold relative z-10">
                 <i className="fa-solid fa-clock"></i>
-                <span>Local Time: {new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', timeZone: 'America/Los_Angeles' })} PST</span>
+                <span>Local Time: {new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', timeZone: 'America/New_York' })} PST</span>
               </div>
             </div>
           </div>

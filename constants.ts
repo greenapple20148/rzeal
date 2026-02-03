@@ -118,9 +118,9 @@ export const HIRING_PROCESS = [
 ];
 
 export const LEADERSHIP = [
-  { name: "Elena Rodriguez", role: "CEO & Founder", image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400&h=400" },
-  { name: "David Chen", role: "CTO", image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=400&h=400" },
-  { name: "Sophia Walsh", role: "Head of Talent", image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=400&h=400" }
+  { name: "Pavithra Chander", role: "CEO & Founder", image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400&h=400" },
+  // { name: "David Chen", role: "CTO", image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=400&h=400" },
+  // { name: "Sophia Walsh", role: "Head of Talent", image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=400&h=400" }
 ];
 
 export const MILESTONES = [
@@ -131,7 +131,7 @@ export const MILESTONES = [
 ];
 
 export const LOCATIONS = [
-  { city: "Ashburn", region: "Americas", role: "Global HQ" },
+  { city: "San Francisco", region: "Americas", role: "Global HQ" },
   { city: "New York", region: "Americas", role: "Finance Hub" },
   { city: "London", region: "EMEA", role: "European HQ" },
   { city: "Singapore", region: "APAC", role: "APAC Hub" }

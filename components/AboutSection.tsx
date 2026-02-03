@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { COMPANY_VALUES, LEADERSHIP, MILESTONES, LOCATIONS } from '../constants';
+import { COMPANY_VALUES, LEADERSHIP } from '../constants';
 
 const AboutSection: React.FC = () => {
   return (
@@ -34,7 +34,7 @@ const AboutSection: React.FC = () => {
           <div className="order-2 lg:order-1 relative">
             <div className="absolute -inset-10 bg-indigo-500/10 rounded-full blur-[100px] -z-10"></div>
             <img 
-              src="https://images.unsplash.com/photo-1600880212340-02d956ea3b7a?auto=format&fit=crop&q=80&w=1200" 
+              src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&q=80&w=1200" 
               alt="RZeal Culture" 
               className="relative rounded-[40px] shadow-2xl border-4 border-white dark:border-slate-800 w-full object-cover aspect-video lg:aspect-square"
             />
@@ -76,34 +76,6 @@ const AboutSection: React.FC = () => {
           </div>
         </div>
 
-        {/* Growth Timeline Module */}
-        <div className="mb-32">
-          <div className="text-center mb-16">
-            <h3 className="text-3xl font-bold text-slate-900 dark:text-white mb-4">Milestones of Excellence</h3>
-            <p className="text-slate-600 dark:text-slate-400">Scaling heights and redefining the industry standards.</p>
-          </div>
-          <div className="relative">
-            <div className="absolute left-1/2 -translate-x-1/2 h-full w-1 bg-slate-100 dark:bg-slate-800 hidden md:block"></div>
-            <div className="space-y-12">
-              {MILESTONES.map((item, i) => (
-                <div key={i} className={`flex flex-col md:flex-row items-center gap-8 ${i % 2 === 0 ? 'md:flex-row-reverse' : ''}`}>
-                  <div className="flex-1 w-full text-center md:text-left">
-                    <div className={`p-8 bg-slate-50 dark:bg-slate-800 rounded-3xl border border-slate-200 dark:border-slate-700 transition-all hover:shadow-lg ${i % 2 === 0 ? 'md:text-left' : 'md:text-right'}`}>
-                      <span className="inline-block px-4 py-1 bg-indigo-600 text-white rounded-full text-xs font-black mb-3">{item.year}</span>
-                      <h4 className="text-xl font-bold text-slate-900 dark:text-white mb-2">{item.title}</h4>
-                      <p className="text-slate-600 dark:text-slate-400 leading-relaxed">{item.desc}</p>
-                    </div>
-                  </div>
-                  <div className="relative z-10 w-12 h-12 bg-white dark:bg-slate-900 border-4 border-indigo-600 rounded-full flex items-center justify-center shrink-0">
-                    <div className="w-3 h-3 bg-indigo-600 rounded-full animate-pulse"></div>
-                  </div>
-                  <div className="flex-1 hidden md:block"></div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-
         {/* Leadership Section */}
         <div className="mb-32">
           <div className="text-center mb-16">
@@ -131,29 +103,6 @@ const AboutSection: React.FC = () => {
               </div>
             ))}
           </div>
-        </div>
-
-        {/* Global Presence Module */}
-        <div className="mb-32 py-20 bg-slate-900 dark:bg-indigo-950 rounded-[60px] relative overflow-hidden text-center text-white px-8">
-           <div className="absolute inset-0 opacity-10 flex items-center justify-center scale-150">
-             <i className="fa-solid fa-map text-[400px]"></i>
-           </div>
-           <div className="relative z-10">
-             <span className="text-indigo-400 font-black uppercase tracking-[0.3em] text-sm mb-4 block">Global Presence</span>
-             <h3 className="text-4xl md:text-5xl font-bold mb-16">Scale Without Borders</h3>
-             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-               {LOCATIONS.map((loc, i) => (
-                 <div key={i} className="p-8 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-sm hover:bg-white/10 transition-colors">
-                    <div className="text-indigo-400 text-2xl mb-4">
-                      <i className="fa-solid fa-location-dot"></i>
-                    </div>
-                    <h4 className="text-2xl font-bold mb-1">{loc.city}</h4>
-                    <p className="text-sm text-slate-400 font-bold uppercase mb-2">{loc.region}</p>
-                    <p className="text-xs text-indigo-300 font-medium italic opacity-70">{loc.role}</p>
-                 </div>
-               ))}
-             </div>
-           </div>
         </div>
 
         {/* Values Section */}
