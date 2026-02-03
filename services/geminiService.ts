@@ -13,10 +13,6 @@ export const getCareerAdvice = async (userPrompt: string, availableJobs: Job[]) 
       location: j.location
     })));
 
-<<<<<<< HEAD
-    // Correctly calling generateContent with model name and contents directly
-=======
->>>>>>> 7940f96 (initial commit)
     const response = await ai.models.generateContent({
       model: 'gemini-3-flash-preview',
       contents: userPrompt,
@@ -29,18 +25,12 @@ export const getCareerAdvice = async (userPrompt: string, availableJobs: Job[]) 
       },
     });
 
-<<<<<<< HEAD
-    // Access the .text property directly (not as a function)
-=======
->>>>>>> 7940f96 (initial commit)
     return response.text || "I'm sorry, I couldn't process that. How else can I help you today?";
   } catch (error) {
     console.error("Gemini API Error:", error);
     return "I'm having a little trouble connecting to my brain right now. Please try again later!";
   }
 };
-<<<<<<< HEAD
-=======
 
 export const searchGlobalJobs = async (query: string) => {
   try {
@@ -65,4 +55,3 @@ export const searchGlobalJobs = async (query: string) => {
     throw error;
   }
 };
->>>>>>> 7940f96 (initial commit)
